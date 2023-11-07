@@ -1,8 +1,17 @@
 Requisitos:
-Cadastro de madeiras.
+Cadastro de estoque.
 Cadastro de instrumentos trabalhados (entre algumas opções).
 Cálculo da escala (locais dos trastes) de um instrumento.
 Cálculo do uso de folha de madeira (em área) para o corpo do instrumento.
 Custo final do instrumento.
 
 Montar um executável.
+
+Telas:
+Tela de onboarding
+Tela principal com:
+  Aba de cadastro
+  Aba de criação do instrumento.
+    Aba de finalização
+  Aba de a decidir (preços e tals)
+  Aba de estoque
