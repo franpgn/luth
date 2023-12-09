@@ -12,4 +12,24 @@ public class Luth implements LuthActions{
     public String addWorkshopItem() {
         return null;
     }
+
+    @Override
+    public String listStock() {
+        return null;
+    }
+
+    @Override
+    public String listWorkshopItems() {
+        return null;
+    }
+
+    @Override
+    public String showExpenses() {
+        return null;
+    }
+
+    @Override
+    public String showIncomes() {
+        return null;
+    }
 }
