@@ -12,7 +12,7 @@ public class Luth implements LuthActions{
             Material material = new Material(quantity, name, value);
             stock.materialList.add(material);
         }
-        return "Item has successful added to stock!";
+        return "Item has been successfully added to the Stock!";
     }
 
     @Override
@@ -21,12 +21,8 @@ public class Luth implements LuthActions{
     }
 
     @Override
-    public StringBuilder listStock(int id) {
-        if (id == 0) {
-            return stock.listWoods();
-        } else{
-            return stock.listMaterials();
-        }
+    public StringBuilder listStock() {
+        return stock.listStock();
     }
 
     @Override
