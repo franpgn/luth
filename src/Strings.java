@@ -1,5 +1,5 @@
 public class Strings extends Instrument {
-    public Strings(InstrumentInfo instrumentInfo, double value) {
-        super(instrumentInfo, value);
+    public Strings( String id, InstrumentInfo instrumentInfo, double value ) {
+        super(id, instrumentInfo, value);
     }
 }

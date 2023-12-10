@@ -1,7 +1,9 @@
 public abstract class Instrument {
+    String id;
     InstrumentInfo instrumentInfo;
     double value;
-    public Instrument(InstrumentInfo instrumentInfo, double value) {
+    public Instrument( String id, InstrumentInfo instrumentInfo, double value ) {
+        this.id = id;
         this.instrumentInfo = instrumentInfo;
         this.value = value;
     }

@@ -1,8 +1,8 @@
 Requisitos:
-Cadastro de estoque.
-Cadastro de instrumentos trabalhados (entre algumas opções).
+Cadastro de estoque. CHECK
+Cadastro de instrumentos trabalhados (entre algumas opções). CHECK
 Cálculo da escala (locais dos trastes) de um instrumento.
-Cálculo do uso de folha de madeira (em área) para o corpo do instrumento.
+Cálculo do uso de folha de madeira (em área) para o corpo do instrumento. CHECK
 Custo final do instrumento.
 
 Montar um executável.

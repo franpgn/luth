@@ -3,17 +3,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Stock implements Serializable {
-    List<Wood> woodList = new ArrayList<>();
-    List<Material> materialList = new ArrayList<>();
+    static List<Wood> woodList = new ArrayList<>();
+    static List<Material> materialList = new ArrayList<>();
 
-    public StringBuilder listStock() {
+    static public StringBuilder listStock() {
         StringBuilder listStock = new StringBuilder();
         listStock.append(listWoods());
         listStock.append(listMaterials());
         return listStock;
     }
 
-    public StringBuilder listWoods() {
+    static public StringBuilder listWoods() {
         StringBuilder listWoods = new StringBuilder();
         for (Wood wood : woodList) {
             listWoods.append(wood.toString());
@@ -21,7 +21,7 @@ public class Stock implements Serializable {
         return listWoods;
     }
 
-    public StringBuilder listMaterials() {
+    static public StringBuilder listMaterials() {
         StringBuilder listMaterials = new StringBuilder();
         for (Material material : materialList) {
             listMaterials.append(material.toString());
