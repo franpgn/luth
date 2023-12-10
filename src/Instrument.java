@@ -5,4 +5,8 @@ public abstract class Instrument {
         this.instrumentInfo = instrumentInfo;
         this.value = value;
     }
+
+    public String toString() {
+        return "Instrument: " + instrumentInfo.getDescription() + "\n" + "Type: " + instrumentInfo.getType() + "\n" + "Value: " + value + "\n";
+    }
 }

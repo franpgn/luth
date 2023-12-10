@@ -33,5 +33,13 @@ public class Workshop implements Serializable {
         }
         return "Instrument not found, please create it before using it";
     }
+
+    public StringBuilder listInstruments(){
+        StringBuilder listInstruments = new StringBuilder();
+        for (Instrument instrument : instrumentList) {
+            listInstruments.append(instrument.toString());
+        }
+        return listInstruments;
+    }
     public Workshop() {}
 }
