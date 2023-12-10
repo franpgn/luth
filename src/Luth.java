@@ -4,8 +4,15 @@ public class Luth implements LuthActions{
     Workshop workshop = new Workshop();
 
     @Override
-    public String addStock() {
-        return null;
+    public String addStock(int id, String name, double quantity) {
+        if (id == 0) {
+            Wood wood = new Wood(name, quantity);
+            stock.woodList.add(wood);
+        }else{
+            Material material = new Material(quantity, name);
+            stock.materialList.add(material);
+        }
+        return "Item has successful added to stock!";
     }
 
     @Override
@@ -14,8 +21,12 @@ public class Luth implements LuthActions{
     }
 
     @Override
-    public String listStock() {
-        return null;
+    public StringBuilder listStock(int id) {
+        if (id == 0) {
+            return stock.listWoods();
+        } else{
+            return stock.listMaterials();
+        }
     }
 
     @Override
