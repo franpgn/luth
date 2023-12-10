@@ -12,22 +12,22 @@ public class Workshop implements Serializable {
                 case "Strings" -> {
                     Strings stringsInstrument = new Strings(instrumentInfo, value);
                     instrumentList.add(stringsInstrument);
-                    return instrumentInfo.getDescription()+" has been successfully added to the Workshop!";
+                    return instrumentInfo.getDescription()+" Instrument has been successfully added to the Workshop!";
                 }
                 case "Woodwind" -> {
                     Woodwind woodwindInstrument = new Woodwind(instrumentInfo, value);
                     instrumentList.add(woodwindInstrument);
-                    return instrumentInfo.getDescription()+" has been successfully added to the Workshop!";
+                    return instrumentInfo.getDescription()+" Instrument has been successfully added to the Workshop!";
                 }
                 case "Brass" -> {
                     Brass brassInstrument = new Brass(instrumentInfo, value);
                     instrumentList.add(brassInstrument);
-                    return instrumentInfo.getDescription()+" has been successfully added to the Workshop!";
+                    return instrumentInfo.getDescription()+" Instrument has been successfully added to the Workshop!";
                 }
                 case "Percussion" -> {
                     Percussion percussionInstrument = new Percussion(instrumentInfo, value);
                     instrumentList.add(percussionInstrument);
-                    return instrumentInfo.getDescription()+" has been successfully added to the Workshop!";
+                    return instrumentInfo.getDescription()+" Instrument has been successfully added to the Workshop!";
                 }
             }
         }
