@@ -33,6 +33,6 @@ public class Material {
         this.value = value;
     }
     public String toString(){
-        return "Name: "+getName()+"Quantity: "+getQuantity()+"Value: " + getValue()+ "\n";
+        return "Name: " + getName() + "\n" + "Quantity: " + getQuantity() +"\n" +"Value: " + getValue() + "\n";
     }
 }
