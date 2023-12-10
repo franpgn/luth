@@ -16,8 +16,8 @@ public class Luth implements LuthActions{
     }
 
     @Override
-    public String addWorkshopItem() {
-        return null;
+    public String addWorkshopItem(int id, String type, double value) {
+        return workshop.addInstrument(id, type, value);
     }
 
     @Override
