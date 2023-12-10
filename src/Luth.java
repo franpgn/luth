@@ -4,12 +4,12 @@ public class Luth implements LuthActions{
     Workshop workshop = new Workshop();
 
     @Override
-    public String addStock(int id, String name, double quantity) {
+    public String addStock(int id, String name, double quantity, double value) {
         if (id == 0) {
-            Wood wood = new Wood(name, quantity);
+            Wood wood = new Wood(name, quantity, value);
             stock.woodList.add(wood);
         }else{
-            Material material = new Material(quantity, name);
+            Material material = new Material(quantity, name, value);
             stock.materialList.add(material);
         }
         return "Item has successful added to stock!";
