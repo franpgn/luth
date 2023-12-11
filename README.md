@@ -20,7 +20,8 @@ Funcionalidades
 
 UML (Modelo de Linguagem de Modelagem Unificada)
 
-A estrutura do sistema pode ser visualizada na imagem a seguir (luthUML.png).
+A estrutura do sistema pode ser visualizada na imagem a seguir.
+![umlImage](luthUML.png)
 
 UML do Luth
 
