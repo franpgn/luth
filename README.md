@@ -23,9 +23,6 @@ UML (Modelo de Linguagem de Modelagem Unificada)
 A estrutura do sistema pode ser visualizada na imagem a seguir.
 ![umlImage](luthUML.png)
 
-UML do Luth
-
-A UML fornece uma visão geral das classes e suas relações no sistema. Certifique-se de revisar a UML para obter uma compreensão mais profunda da arquitetura do Luth.
 Como Contribuir
 
 Sinta-se à vontade para contribuir para o desenvolvimento do Luth! Aqui estão algumas maneiras de contribuir:
