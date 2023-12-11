@@ -6,6 +6,16 @@ public class Stock implements Serializable {
     static List<Wood> woodList = new ArrayList<>();
     static List<Material> materialList = new ArrayList<>();
 
+    static public String addStock( int id, String name, double quantity, double value ) {
+        if (id == 0) {
+            Wood wood = new Wood(name, quantity, value);
+            Stock.woodList.add(wood);
+        } else {
+            Material material = new Material(quantity, name, value);
+            Stock.materialList.add(material);
+        }
+        return "Item has been successfully added to the Stock!";
+    }
     static public StringBuilder listStock() {
         StringBuilder listStock = new StringBuilder();
         listStock.append(listWoods());
