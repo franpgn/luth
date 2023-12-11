@@ -2,6 +2,7 @@
 Descrição
 
 O Luth é um projeto desenvolvido para auxiliar luthiers em seu processo de criação de instrumentos musicais. Este sistema oferece funcionalidades para gerenciar o estoque de materiais, acompanhar o progresso na construção de instrumentos e manter um registro organizado das criações. Com o Luth, luthiers podem otimizar seu fluxo de trabalho, garantindo eficiência e precisão em todas as etapas do processo.
+
 Funcionalidades
 
     Gestão de Estoque:
