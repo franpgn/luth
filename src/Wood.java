@@ -7,7 +7,7 @@ public class Wood {
         return name;
     }
 
-    public void setName(String name) {
+    public void setName( String name ) {
         this.name = name;
     }
 
@@ -15,7 +15,7 @@ public class Wood {
         return meterSquared;
     }
 
-    public void setMeterSquared(double meterSquared) {
+    public void setMeterSquared( double meterSquared ) {
         this.meterSquared = meterSquared;
     }
 
@@ -23,7 +23,7 @@ public class Wood {
         return value;
     }
 
-    public void setValue(double value) {
+    public void setValue( double value ) {
         this.value = value;
     }
 

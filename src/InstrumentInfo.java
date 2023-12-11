@@ -1,4 +1,5 @@
 import java.io.Serializable;
+import java.util.List;
 
 public enum InstrumentInfo implements Serializable {
     UNKNOWN(0, "Unknown", "None"),
@@ -27,6 +28,8 @@ public enum InstrumentInfo implements Serializable {
     private int id;
     private String description;
     private String type;
+    private List<Wood> woods;
+    private List<Material> materials;
 
     InstrumentInfo(int id, String description, String type) {
         this.id = id;
@@ -58,6 +61,22 @@ public enum InstrumentInfo implements Serializable {
 
     public void setType(String type) {
         this.type = type;
+    }
+
+    public List<Wood> getWoods() {
+        return woods;
+    }
+
+    public void setWoods(List<Wood> woods) {
+        this.woods = woods;
+    }
+
+    public List<Material> getMaterials() {
+        return materials;
+    }
+
+    public void setMaterials(List<Material> materials) {
+        this.materials = materials;
     }
 
     public static InstrumentInfo getById(int id){

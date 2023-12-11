@@ -1,5 +1,5 @@
 public class Brass extends Instrument {
-    public Brass(InstrumentInfo instrumentInfo, double value) {
-        super(instrumentInfo, value);
+    public Brass( String id, InstrumentInfo instrumentInfo, double value ) {
+        super(id, instrumentInfo, value);
     }
 }
