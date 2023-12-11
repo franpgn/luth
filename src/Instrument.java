@@ -1,5 +1,5 @@
 public abstract class Instrument {
-    String id;
+    private String id;
     InstrumentInfo instrumentInfo;
     double value;
     public Instrument( String id, InstrumentInfo instrumentInfo, double value ) {
@@ -8,7 +8,17 @@ public abstract class Instrument {
         this.value = value;
     }
 
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
     public String toString() {
         return "Instrument: " + instrumentInfo.getDescription() + "\n" + "Type: " + instrumentInfo.getType() + "\n" + "Value: " + value + "\n";
     }
+
+    public Instrument(){}
 }
