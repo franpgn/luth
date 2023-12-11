@@ -38,15 +38,15 @@ public class Stock implements Serializable {
         }
         return listMaterials;
     }
-    public double calculateExpenses(){
-        double allValue = 0;
+    static public double calculateExpenses(){
+        double totalExpenses = 0;
         for (Wood wood : woodList) {
-            allValue = allValue + (wood.getValue());
+            totalExpenses += (wood.getValue());
         }
         for (Material material : materialList) {
-            allValue = allValue + (material.getValue());
+            totalExpenses += (material.getValue());
         }
-        return allValue;
+        return totalExpenses;
     }
 
 }

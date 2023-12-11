@@ -25,12 +25,12 @@ public class Luth implements LuthActions{
     }
 
     @Override
-    public double showExpenses( String id ) {
-        return workshop.calculateExpenses( id );
+    public double showExpenses() {
+        return Stock.calculateExpenses();
     }
 
     @Override
-    public double showIncomes( String id ) {
-        return 0;
+    public double showIncomes() {
+        return workshop.calculateIncomes();
     }
 }

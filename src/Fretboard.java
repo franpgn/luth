@@ -1,11 +1,13 @@
 public class Fretboard {
-    private double fretPosition;
+    private double[] fretPositions;
+    private int numberFrets;
 
-    public double getFretPosition(double fretBoardLength, int numberFrets) {
-        for (int i=0; i <= numberFrets; i++){
-        fretPosition = fretBoardLength / Constants.FRET_DISTANCE;
-        fretBoardLength = fretBoardLength - fretPosition;
+    public double[] getFretPositions( double fretboardLength, int numberFrets ) {
+        fretPositions = new double[numberFrets];
+        for ( int i = 0; i < numberFrets; i++ ){
+            fretPositions[i] = fretboardLength / Constants.FRET_DISTANCE;
+            fretboardLength = fretboardLength - fretPositions[i];
         }
-        return fretPosition;
+        return fretPositions;
     }
 }

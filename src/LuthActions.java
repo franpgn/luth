@@ -5,6 +5,6 @@ public interface LuthActions {
     String addWorkshopItem( int id, double value, List<Wood> woods, List<Material> materials );
     StringBuilder listStock();
     StringBuilder listWorkshopItems();
-    double showExpenses( String id );
-    double showIncomes( String id );
+    double showExpenses();
+    double showIncomes();
 }

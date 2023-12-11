@@ -42,41 +42,11 @@ public class Workshop implements Serializable {
         return listInstruments;
     }
 
-    public double calculateExpenses( String id ) {
-        double woodTotalValue = 0;
-        double materialTotalValue = 0;
-        try {
-            Instrument instrumentById = null;
-            for (Instrument instrument : instrumentList) {
-                if (instrument.getId().equals(id) && instrument.instrumentInfo.getType().equals("Strings")) {
-                    instrumentById = new Strings();
-                } else if (instrument.getId().equals(id) && instrument.instrumentInfo.getType().equals("Woodwind")) {
-                    instrumentById = new Woodwind();
-                } else if (instrument.getId().equals(id) && instrument.instrumentInfo.getType().equals("Brass")) {
-                    instrumentById = new Brass();
-                } else if (instrument.getId().equals(id) && instrument.instrumentInfo.getType().equals("Percussion")) {
-                    instrumentById = new Percussion();
-                } else {
-                    return 0.0;
-                }
-                instrumentById = instrument;
-            }
-            woodTotalValue = 0;
-            materialTotalValue = 0;
-            for (Wood wood : instrumentById.instrumentInfo.getWoods()) {
-                woodTotalValue += wood.getValue()*wood.getMeterSquared();
-            }
-            for (Material material : instrumentById.instrumentInfo.getMaterials()) {
-                materialTotalValue += material.getValue()*material.getQuantity();
-            }
-        } catch (NullPointerException e) {
-            e.printStackTrace();
+    public double calculateIncomes() {
+        double totalIncome = 0;
+        for ( Instrument instrument : instrumentList ) {
+            totalIncome += instrument.value;
         }
-        return woodTotalValue + materialTotalValue;
+        return totalIncome;
     }
-
-    public double calulateIncomes( String id ) {
-        return 0;
-    }
-    public Workshop() {}
 }
