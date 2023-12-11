@@ -5,20 +5,13 @@ public class Luth implements LuthActions{
     Workshop workshop = new Workshop();
 
     @Override
-    public String addStock(int id, String name, double quantity, double value) {
-        if (id == 0) {
-            Wood wood = new Wood(name, quantity, value);
-            Stock.woodList.add(wood);
-        }else{
-            Material material = new Material(quantity, name, value);
-            Stock.materialList.add(material);
-        }
-        return "Item has been successfully added to the Stock!";
+    public String addStock( int id, String name, double quantity, double value ) {
+        return Stock.addStock( id, name, quantity, value );
     }
 
     @Override
-    public String addWorkshopItem(int id, String type, double value, List<Wood> woods, List<Material> materials ) {
-        return workshop.addInstrument(id, type, value, woods, materials );
+    public String addWorkshopItem( int id, double value, List<Wood> woods, List<Material> materials ) {
+        return workshop.addInstrument(id, value, woods, materials );
     }
 
     @Override
@@ -32,12 +25,12 @@ public class Luth implements LuthActions{
     }
 
     @Override
-    public String showExpenses() {
-        return null;
+    public double showExpenses( String id ) {
+        return workshop.calculateExpenses( id );
     }
 
     @Override
-    public String showIncomes() {
-        return null;
+    public double showIncomes( String id ) {
+        return 0;
     }
 }
