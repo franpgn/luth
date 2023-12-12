@@ -20,7 +20,7 @@ public class LuthApp {
 
         cardLayout = new CardLayout();
         cardPanel = new JPanel(cardLayout);
-        luth = new Luth();  // Inicialize a instância de Luth
+        luth = new Luth();
 
         createMainMenu();
         createSelectScreen();
@@ -171,6 +171,9 @@ public class LuthApp {
                     double value = Double.parseDouble(valueField.getText());
 
                     luth.addStock(0, name, quantity, value);
+                    nameField.setText("");
+                    quantityField.setText("");
+                    valueField.setText("");
                     JOptionPane.showMessageDialog(frame, "Item adicionado ao estoque com sucesso!");
                 } catch (NumberFormatException ex) {
                     JOptionPane.showMessageDialog(frame, "Por favor, insira números válidos para quantidade e valor.");
@@ -221,6 +224,9 @@ public class LuthApp {
                     double value = Double.parseDouble(valueField.getText());
 
                     luth.addStock(1, name, quantity, value);
+                    nameField.setText("");
+                    quantityField.setText("");
+                    valueField.setText("");
                     JOptionPane.showMessageDialog(frame, "Item adicionado ao estoque com sucesso!");
                 } catch (NumberFormatException ex) {
                     JOptionPane.showMessageDialog(frame, "Por favor, insira números válidos para quantidade e valor.");
@@ -310,8 +316,16 @@ public class LuthApp {
                     materials.add(material);
 
                     luth.addWorkshopItem(selectedInstrument.getId(), value, woods, materials);
+                    materialNameField.setText("");
+                    woodNameField.setText("");
+                    valueField.setText("");
+                    materialValueField.setText("");
+                    materialQuantityField.setText("");
+                    woodValueField.setText("");
+                    woodQuantityField.setText("");
 
                     JOptionPane.showMessageDialog(frame, "Item adicionado à oficina com sucesso!");
+
                 } catch (NumberFormatException ex) {
                     JOptionPane.showMessageDialog(frame, "Por favor, insira números válidos para quantidade e valor.");
                 }
@@ -346,7 +360,7 @@ public class LuthApp {
         stockTextArea.setEditable(false);
         stockTextArea.setFont(customFont);
 
-        // Obtém a lista de estoque
+
         StringBuilder stockList = luth.listStock();
 
         stockTextArea.setText(stockList.toString());
@@ -380,7 +394,6 @@ public class LuthApp {
         itemsTextArea.setEditable(false);
         itemsTextArea.setFont(customFont);
 
-        // Obtém a lista de instrumentos na oficina
         StringBuilder itemsList = luth.listWorkshopItems();
 
         itemsTextArea.setText(itemsList.toString());
@@ -414,8 +427,6 @@ public class LuthApp {
         incomesTextArea.setEditable(false);
         incomesTextArea.setFont(customFont);
 
-        // Obtém a receita de ganhos
-        double incomes = luth.showIncomes();
 
         incomesTextArea.setText("Receitas Totais: " + incomes);
 
@@ -434,10 +445,7 @@ public class LuthApp {
 
         cardPanel.add(showIncomesPanel, "ShowIncomes");
     }
-    private void revalidateContent() {
-        cardPanel.revalidate();
-        cardPanel.repaint();
-    }
+
 
     private void createShowExpensesScreen() {
         JPanel showExpensesPanel = new JPanel(new BorderLayout());
