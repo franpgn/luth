@@ -34,6 +34,6 @@ public class Wood {
     }
 
     public String toString(){
-        return "Name: " + getName()+"\n" + "Meters Squared: " + getMeterSquared() + "\n"+"Value: " + getValue() + "\n";
+        return "Name: " + getName()+"\n" + "Meters Squared: " + getMeterSquared() + "\n"+"Value: " + getValue() + "\n\n";
     }
 }
