@@ -17,7 +17,7 @@ public abstract class Instrument {
     }
 
     public String toString() {
-        return "Instrument: " + instrumentInfo.getDescription() + "\n" + "Type: " + instrumentInfo.getType() + "\n" + "Value: " + value + "\n";
+        return "Instrument: " + instrumentInfo.getDescription() + "\n" + "Type: " + instrumentInfo.getType() + "\n" + "Value: " + value + "\n\n";
     }
 
     public Instrument(){}
