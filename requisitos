@@ -1,17 +1,15 @@
 Requisitos:
 Cadastro de estoque. CHECK
 Cadastro de instrumentos trabalhados (entre algumas opções). CHECK
-Cálculo da escala (locais dos trastes) de um instrumento.
+Cálculo da escala (locais dos trastes) de um instrumento. CHECK
 Cálculo do uso de folha de madeira (em área) para o corpo do instrumento. CHECK
 Custo final do instrumento.
 
 Montar um executável.
 
 Telas:
-Tela de onboarding
+Tela de onboarding --
 Tela principal com:
-  Aba de cadastro
-  Aba de criação do instrumento.
-    Aba de finalização
-  Aba de a decidir (preços e tals)
-  Aba de estoque
+  Aba de criação do instrumento.CHECK
+  Aba de a decidir (preços e tals)CHECK
+  Aba de estoque CHECK
